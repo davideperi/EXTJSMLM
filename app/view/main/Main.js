@@ -13,7 +13,8 @@ Ext.define('MultiLanguageNative.view.main.Main', {
         'Ext.MessageBox',
 
         'MultiLanguageNative.view.main.MainController',
-        'MultiLanguageNative.view.main.MainModel'
+        'MultiLanguageNative.view.main.MainModel',
+        'MultiLanguageNative.view.main.List'
     ],
 
     controller: 'main',
@@ -28,7 +29,16 @@ Ext.define('MultiLanguageNative.view.main.Main', {
 
     tabBarPosition: 'bottom',
 
-    items: [{
+    items: [
+        {
+            title: 'Home',
+            iconCls: 'x-fa fa-home',
+            layout: 'fit',
+            // The following grid shares a store with the classic version's grid as well!
+            items: [{
+                xtype: 'mainlist'
+            }]
+        },{
             title: 'Users',
             iconCls: 'x-fa fa-user',
             bind: {

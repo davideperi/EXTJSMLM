@@ -22,8 +22,7 @@
      */
     "classpath": [
         "app",
-        "${toolkit.name}/src",
-		"${app.dir}/locale/${app.locale}"
+        "${toolkit.name}/src"
     ],
 
     /**
@@ -55,7 +54,7 @@
      */
     
     
-    "theme": "theme-cupertino",
+    "theme": "theme-triton",
     
     
     /**
@@ -68,15 +67,8 @@
      *      ]
      */
     "requires": [
-        "font-awesome",
-		"ext-locale"
+        "font-awesome"
     ],
-
-	"locales": [
-	    "en",
-	    "es",
-		"it"
-	],
 
     /**
      * Fashion build configuration properties.
@@ -228,9 +220,6 @@
      *
      */
     "js": [
-	    {
-	        "path": "${framework.dir}/build/ext-all-rtl-debug.js"
-	    },
         {
             "path": "app.js",
             "bundle": true
@@ -240,9 +229,6 @@
     /**
      * Settings specific to classic toolkit builds.
      */
-
-
-	/*
     "classic": {
         "js": [
             // Remove this entry to individually load sources from the framework.
@@ -251,14 +237,11 @@
             }
         ]
     },
-	*/
 
     /**
      * Settings specific to modern toolkit builds.
      */
-    
-	/*
-	"modern": {
+    "modern": {
         "js": [
             // Remove this entry to individually load sources from the framework.
             {
@@ -266,7 +249,7 @@
             }
         ]
     },
-	*/
+
     /**
      * List of all CSS assets in the right inclusion order.
      *
@@ -330,7 +313,7 @@
     "production": {
         "output": {
             "appCache": {
-                "enable": false,
+                "enable": true,
                 "path": "cache.appcache"
             }
         },
@@ -338,7 +321,7 @@
             "cache": "${build.timestamp}"
         },
         "cache": {
-            "enable": false
+            "enable": true
         },
         "compressor": {
             "type": "yui"
@@ -393,8 +376,7 @@
      */
     "bootstrap": {
         "base": "${app.dir}",
-
-		"manifest": "${build.id}.json",
+        
         "microloader": "bootstrap.js",
         "css": "bootstrap.css"
     },
@@ -444,17 +426,6 @@
         "base": "${workspace.build.dir}/${build.environment}/${app.name}",
         "appCache": {
             "enable": false
-        },
-		"js": "${build.id}.js",
-        "microloader": {
-              "path": "${build.id}-microloader.js",
-          "embed": true,
-          "enable": true
-        },
-        "manifest": {
-          "path": "${build.id}.json",
-          "embed": false,
-          "enable": "${app.output.microloader.enable}"
         }
     },
     
@@ -601,35 +572,11 @@
      *     }
      *
      */
-
-	"builds": {
-		/*
-		"classic-es": {
-			"toolkit": "classic",
-			"theme": "theme-triton",
-			"locale" : "es"
-		},
-		"classic-it": {
-			"toolkit": "classic",
-			"theme": "theme-triton",
-			"locale" : "it"
-		},
-		"classic-en": {
-			"toolkit": "classic",
-			"theme": "theme-triton",
-			"locale" : "en"
-		}
-		*/
-		"modern": {
-            "toolkit": "modern",
-            "theme": "theme-cupertino"
-        }
-	},
     
 
     /**
      * Uniquely generated id for this application, used as prefix for localStorage keys.
      * Normally you should never change this value.
      */
-    "id": "9cb6698c-e6af-4dc6-9897-f7d4269629ad"
+    "id": "12e1d5be-f360-4098-8342-1ef8989510b4"
 }

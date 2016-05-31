@@ -7,18 +7,6 @@
 
     <title>MultiLanguageNative</title>
 
-	<script type="text/javascript">
-	    var Ext = Ext || {};
-	    Ext.beforeLoad = function (tags) {
-	        var locale = location.href.match(/locale=([\w-]+)/);
-			if( locale === null){
-				var locale = location.href.match(/lang=([\w-]+)/);
-			}
-	        locale = (locale && locale[1]) || 'en';
-			Ext.manifest = "modern-" + locale;
-	    };
-	</script>
-
     <!--
     <script type="text/javascript">
         var Ext = Ext || {}; // Ext namespace won't be defined yet...
@@ -59,7 +47,7 @@
     -->
     
     <!-- The line below must be kept intact for Sencha Cmd to build your application -->
-    <script id="microloader" data-app="9cb6698c-e6af-4dc6-9897-f7d4269629ad" type="text/javascript" src="bootstrap.js"></script>
+    <script id="microloader" data-app="12e1d5be-f360-4098-8342-1ef8989510b4" type="text/javascript" src="bootstrap.js"></script>
 
 </head>
 <body></body>

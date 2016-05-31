@@ -1,6 +1,6 @@
 $app-name:  dynamic( 'MultiLanguageNative' );
 $image-search-path: '/Users/davide/Lavoro/Sencha/ExtjsApps/MultiLanguageNative/build/development/MultiLanguageNative/resources';
-$theme-name:  dynamic( 'theme-cupertino' );
+$theme-name:  dynamic( 'theme-triton' );
 $include-ext-abstractcomponent: dynamic(true);;
 $include-ext-abstractmanager: dynamic(true);;
 $include-ext-abstractplugin: dynamic(true);;
@@ -466,16 +466,10 @@ $include-ext-tab-tab: dynamic(true);;
 $include-ext-table-cell: dynamic(true);;
 $include-ext-table-row: dynamic(true);;
 $include-ext-table-table: dynamic(true);;
-$include-ext-theme-cupertino-component: dynamic(true);;
-$include-ext-theme-cupertino-titlebar: dynamic(true);;
-$include-ext-theme-cupertino-dataview-list: dynamic(true);;
-$include-ext-theme-cupertino-dataview-nestedlist: dynamic(true);;
-$include-ext-theme-device_base-dataview-list: dynamic(true);;
-$include-ext-theme-device_base-dataview-nestedlist: dynamic(true);;
-$include-ext-theme-device_base-grid-grid: dynamic(true);;
-$include-ext-theme-device_base-grid-headercontainer: dynamic(true);;
-$include-ext-theme-device_base-grid-plugin-summaryrow: dynamic(true);;
-$include-ext-theme-device_base-util-positionmap: dynamic(true);;
+$include-ext-theme-neptune-component: dynamic(true);;
+$include-ext-theme-neptune-toolbar: dynamic(true);;
+$include-ext-theme-triton-component: dynamic(true);;
+$include-ext-theme-triton-toolbar: dynamic(true);;
 $include-ext-tip-tooltip: dynamic(true);;
 $include-ext-util-abstractmixedcollection: dynamic(true);;
 $include-ext-util-audio: dynamic(true);;
@@ -583,21 +577,13 @@ $current-resource-root: $theme-base-resource-root;
 $relative-image-path-for-uis: $theme-base-resource-path;
 @import '../../../../../ext/modern/theme-base/sass/etc/all';
 
-/* including package theme-device-base */
-$theme-device-base-resource-root: '' !default;
-$theme-device-base-resource-path: 'images' !default;
-$current-package: 'theme-device-base';
-$current-resource-root: $theme-device-base-resource-root;
-$relative-image-path-for-uis: $theme-device-base-resource-path;
-@import '../../../../../ext/modern/theme-device-base/sass/etc/all';
-
-/* including package theme-cupertino */
-$theme-cupertino-resource-root: '' !default;
-$theme-cupertino-resource-path: 'images' !default;
-$current-package: 'theme-cupertino';
-$current-resource-root: $theme-cupertino-resource-root;
-$relative-image-path-for-uis: $theme-cupertino-resource-path;
-@import '../../../../../ext/modern/theme-cupertino/sass/etc/all';
+/* including package theme-neptune */
+$theme-neptune-resource-root: '' !default;
+$theme-neptune-resource-path: 'images' !default;
+$current-package: 'theme-neptune';
+$current-resource-root: $theme-neptune-resource-root;
+$relative-image-path-for-uis: $theme-neptune-resource-path;
+@import '../../../../../ext/modern/theme-neptune/sass/etc/all';
 
 /* including package font-awesome */
 $font-awesome-resource-root: 'font-awesome' !default;
@@ -606,6 +592,14 @@ $current-package: 'font-awesome';
 $current-resource-root: $font-awesome-resource-root;
 $relative-image-path-for-uis: $font-awesome-resource-path;
 @import '../../../../../ext/packages/font-awesome/sass/etc/all';
+
+/* including package theme-triton */
+$theme-triton-resource-root: '' !default;
+$theme-triton-resource-path: 'images' !default;
+$current-package: 'theme-triton';
+$current-resource-root: $theme-triton-resource-root;
+$relative-image-path-for-uis: $theme-triton-resource-path;
+@import '../../../../../ext/modern/theme-triton/sass/etc/all';
 
 /* including package MultiLanguageNative */
 $MultiLanguageNative-resource-root: '' !default;
@@ -637,30 +631,63 @@ $relative-image-path-for-uis: $theme-base-resource-path;
 @import '../../../../../ext/modern/theme-base/sass/var/Component';
 @import '../../../../../ext/modern/theme-base/sass/var/plugin/field/PlaceHolderLabel';
 
-/* including package theme-device-base */
-$theme-device-base-resource-root: '' !default;
-$theme-device-base-resource-path: 'images' !default;
-$current-package: 'theme-device-base';
-$current-resource-root: $theme-device-base-resource-root;
-$relative-image-path-for-uis: $theme-device-base-resource-path;
-@import '../../../../../ext/modern/theme-device-base/sass/var/Button';
+/* including package theme-neptune */
+$theme-neptune-resource-root: '' !default;
+$theme-neptune-resource-path: 'images' !default;
+$current-package: 'theme-neptune';
+$current-resource-root: $theme-neptune-resource-root;
+$relative-image-path-for-uis: $theme-neptune-resource-path;
+@import '../../../../../ext/modern/theme-neptune/sass/var/Progress';
+@import '../../../../../ext/modern/theme-neptune/sass/var/Component';
+@import '../../../../../ext/modern/theme-neptune/sass/var/Mask';
+@import '../../../../../ext/modern/theme-neptune/sass/var/list/TreeItem';
+@import '../../../../../ext/modern/theme-neptune/sass/var/Panel';
+@import '../../../../../ext/modern/theme-neptune/sass/var/Button';
+@import '../../../../../ext/modern/theme-neptune/sass/var/Sheet';
+@import '../../../../../ext/modern/theme-neptune/sass/var/Toolbar';
+@import '../../../../../ext/modern/theme-neptune/sass/var/field/Field';
+@import '../../../../../ext/modern/theme-neptune/sass/var/field/Text';
+@import '../../../../../ext/modern/theme-neptune/sass/var/MessageBox';
+@import '../../../../../ext/modern/theme-neptune/sass/var/carousel/Carousel';
+@import '../../../../../ext/modern/theme-neptune/sass/var/dataview/IndexBar';
+@import '../../../../../ext/modern/theme-neptune/sass/var/dataview/List';
+@import '../../../../../ext/modern/theme-neptune/sass/var/field/Checkbox';
+@import '../../../../../ext/modern/theme-neptune/sass/var/picker/Picker';
+@import '../../../../../ext/modern/theme-neptune/sass/var/field/Radio';
+@import '../../../../../ext/modern/theme-neptune/sass/var/field/Select';
+@import '../../../../../ext/modern/theme-neptune/sass/var/field/Slider';
+@import '../../../../../ext/modern/theme-neptune/sass/var/field/Spinner';
+@import '../../../../../ext/modern/theme-neptune/sass/var/field/Toggle';
+@import '../../../../../ext/modern/theme-neptune/sass/var/form/FieldSet';
+@import '../../../../../ext/modern/theme-neptune/sass/var/form/Panel';
+@import '../../../../../ext/modern/theme-neptune/sass/var/grid/column/Column';
+@import '../../../../../ext/modern/theme-neptune/sass/var/grid/Grid';
+@import '../../../../../ext/modern/theme-neptune/sass/var/grid/plugin/ViewOptions';
+@import '../../../../../ext/modern/theme-neptune/sass/var/panel/Tool';
+@import '../../../../../ext/modern/theme-neptune/sass/var/tab/Tab';
+@import '../../../../../ext/modern/theme-neptune/sass/var/tab/Bar';
 
-/* including package theme-cupertino */
-$theme-cupertino-resource-root: '' !default;
-$theme-cupertino-resource-path: 'images' !default;
-$current-package: 'theme-cupertino';
-$current-resource-root: $theme-cupertino-resource-root;
-$relative-image-path-for-uis: $theme-cupertino-resource-path;
-@import '../../../../../ext/modern/theme-cupertino/sass/var/Component';
-@import '../../../../../ext/modern/theme-cupertino/sass/var/Button';
-@import '../../../../../ext/modern/theme-cupertino/sass/var/field/Field';
-@import '../../../../../ext/modern/theme-cupertino/sass/var/dataview/List';
-@import '../../../../../ext/modern/theme-cupertino/sass/var/picker/Picker';
-@import '../../../../../ext/modern/theme-cupertino/sass/var/field/Slider';
-@import '../../../../../ext/modern/theme-cupertino/sass/var/field/Toggle';
-@import '../../../../../ext/modern/theme-cupertino/sass/var/form/FieldSet';
-@import '../../../../../ext/modern/theme-cupertino/sass/var/form/Panel';
-@import '../../../../../ext/modern/theme-cupertino/sass/var/grid/Grid';
+/* including package theme-triton */
+$theme-triton-resource-root: '' !default;
+$theme-triton-resource-path: 'images' !default;
+$current-package: 'theme-triton';
+$current-resource-root: $theme-triton-resource-root;
+$relative-image-path-for-uis: $theme-triton-resource-path;
+@import '../../../../../ext/modern/theme-triton/sass/var/Component';
+@import '../../../../../ext/modern/theme-triton/sass/var/Mask';
+@import '../../../../../ext/modern/theme-triton/sass/var/list/TreeItem';
+@import '../../../../../ext/modern/theme-triton/sass/var/Panel';
+@import '../../../../../ext/modern/theme-triton/sass/var/Button';
+@import '../../../../../ext/modern/theme-triton/sass/var/Toolbar';
+@import '../../../../../ext/modern/theme-triton/sass/var/field/Field';
+@import '../../../../../ext/modern/theme-triton/sass/var/field/Text';
+@import '../../../../../ext/modern/theme-triton/sass/var/MessageBox';
+@import '../../../../../ext/modern/theme-triton/sass/var/dataview/List';
+@import '../../../../../ext/modern/theme-triton/sass/var/picker/Picker';
+@import '../../../../../ext/modern/theme-triton/sass/var/form/FieldSet';
+@import '../../../../../ext/modern/theme-triton/sass/var/grid/column/Column';
+@import '../../../../../ext/modern/theme-triton/sass/var/tab/Tab';
+@import '../../../../../ext/modern/theme-triton/sass/var/tab/Bar';
 
 /* including package MultiLanguageNative */
 $MultiLanguageNative-resource-root: '' !default;
@@ -740,66 +767,47 @@ $relative-image-path-for-uis: $theme-base-resource-path;
 @import '../../../../../ext/modern/theme-base/sass/src/tab/Panel';
 @import '../../../../../ext/modern/theme-base/sass/src/table/Table';
 
-/* including package font-pictos */
-$font-pictos-resource-root: 'font-pictos' !default;
-$font-pictos-resource-path: 'font-pictos/images' !default;
-$current-package: 'font-pictos';
-$current-resource-root: $font-pictos-resource-root;
-$relative-image-path-for-uis: $font-pictos-resource-path;
-@import '../../../../../ext/packages/font-pictos/sass/src/all';
-
-/* including package theme-device-base */
-$theme-device-base-resource-root: '' !default;
-$theme-device-base-resource-path: 'images' !default;
-$current-package: 'theme-device-base';
-$current-resource-root: $theme-device-base-resource-root;
-$relative-image-path-for-uis: $theme-device-base-resource-path;
-@import '../../../../../ext/modern/theme-device-base/sass/src/Component';
-@import '../../../../../ext/modern/theme-device-base/sass/src/Panel';
-@import '../../../../../ext/modern/theme-device-base/sass/src/Button';
-@import '../../../../../ext/modern/theme-device-base/sass/src/Toolbar';
-@import '../../../../../ext/modern/theme-device-base/sass/src/MessageBox';
-@import '../../../../../ext/modern/theme-device-base/sass/src/dataview/List';
-@import '../../../../../ext/modern/theme-device-base/sass/src/field/Spinner';
-@import '../../../../../ext/modern/theme-device-base/sass/src/form/Panel';
-@import '../../../../../ext/modern/theme-device-base/sass/src/grid/Grid';
-@import '../../../../../ext/modern/theme-device-base/sass/src/tab/Panel';
-
-/* including package theme-cupertino */
-$theme-cupertino-resource-root: '' !default;
-$theme-cupertino-resource-path: 'images' !default;
-$current-package: 'theme-cupertino';
-$current-resource-root: $theme-cupertino-resource-root;
-$relative-image-path-for-uis: $theme-cupertino-resource-path;
-@import '../../../../../ext/modern/theme-cupertino/sass/src/Component';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/Mask';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/Panel';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/Button';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/Sheet';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/Menu';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/Toolbar';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/field/Field';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/field/TextArea';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/MessageBox';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/SegmentedButton';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/Toast';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/carousel/Indicator';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/dataview/IndexBar';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/dataview/List';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/field/Checkbox';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/picker/Picker';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/field/Radio';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/field/Select';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/slider/Slider';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/field/Slider';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/field/Spinner';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/slider/Toggle';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/form/FieldSet';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/form/Panel';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/grid/Grid';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/plugin/PullRefresh';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/plugin/field/PlaceHolderLabel';
-@import '../../../../../ext/modern/theme-cupertino/sass/src/tab/Panel';
+/* including package theme-neptune */
+$theme-neptune-resource-root: '' !default;
+$theme-neptune-resource-path: 'images' !default;
+$current-package: 'theme-neptune';
+$current-resource-root: $theme-neptune-resource-root;
+$relative-image-path-for-uis: $theme-neptune-resource-path;
+@import '../../../../../ext/modern/theme-neptune/sass/src/Progress';
+@import '../../../../../ext/modern/theme-neptune/sass/src/Component';
+@import '../../../../../ext/modern/theme-neptune/sass/src/layout/Default';
+@import '../../../../../ext/modern/theme-neptune/sass/src/Mask';
+@import '../../../../../ext/modern/theme-neptune/sass/src/Panel';
+@import '../../../../../ext/modern/theme-neptune/sass/src/Button';
+@import '../../../../../ext/modern/theme-neptune/sass/src/Sheet';
+@import '../../../../../ext/modern/theme-neptune/sass/src/Menu';
+@import '../../../../../ext/modern/theme-neptune/sass/src/Toolbar';
+@import '../../../../../ext/modern/theme-neptune/sass/src/field/Field';
+@import '../../../../../ext/modern/theme-neptune/sass/src/field/TextArea';
+@import '../../../../../ext/modern/theme-neptune/sass/src/MessageBox';
+@import '../../../../../ext/modern/theme-neptune/sass/src/Toast';
+@import '../../../../../ext/modern/theme-neptune/sass/src/carousel/Carousel';
+@import '../../../../../ext/modern/theme-neptune/sass/src/dataview/IndexBar';
+@import '../../../../../ext/modern/theme-neptune/sass/src/dataview/List';
+@import '../../../../../ext/modern/theme-neptune/sass/src/field/Checkbox';
+@import '../../../../../ext/modern/theme-neptune/sass/src/picker/Picker';
+@import '../../../../../ext/modern/theme-neptune/sass/src/field/Radio';
+@import '../../../../../ext/modern/theme-neptune/sass/src/field/Search';
+@import '../../../../../ext/modern/theme-neptune/sass/src/field/Select';
+@import '../../../../../ext/modern/theme-neptune/sass/src/slider/Slider';
+@import '../../../../../ext/modern/theme-neptune/sass/src/field/Slider';
+@import '../../../../../ext/modern/theme-neptune/sass/src/field/Spinner';
+@import '../../../../../ext/modern/theme-neptune/sass/src/slider/Toggle';
+@import '../../../../../ext/modern/theme-neptune/sass/src/form/FieldSet';
+@import '../../../../../ext/modern/theme-neptune/sass/src/form/Panel';
+@import '../../../../../ext/modern/theme-neptune/sass/src/grid/column/Column';
+@import '../../../../../ext/modern/theme-neptune/sass/src/grid/Grid';
+@import '../../../../../ext/modern/theme-neptune/sass/src/panel/Tool';
+@import '../../../../../ext/modern/theme-neptune/sass/src/plugin/ListPaging';
+@import '../../../../../ext/modern/theme-neptune/sass/src/plugin/PullRefresh';
+@import '../../../../../ext/modern/theme-neptune/sass/src/tab/Tab';
+@import '../../../../../ext/modern/theme-neptune/sass/src/tab/Bar';
+@import '../../../../../ext/modern/theme-neptune/sass/src/tab/Panel';
 
 /* including package font-awesome */
 $font-awesome-resource-root: 'font-awesome' !default;
@@ -808,3 +816,20 @@ $current-package: 'font-awesome';
 $current-resource-root: $font-awesome-resource-root;
 $relative-image-path-for-uis: $font-awesome-resource-path;
 @import '../../../../../ext/packages/font-awesome/sass/src/all';
+
+/* including package font-ext */
+$font-ext-resource-root: 'font-ext' !default;
+$font-ext-resource-path: 'font-ext/images' !default;
+$current-package: 'font-ext';
+$current-resource-root: $font-ext-resource-root;
+$relative-image-path-for-uis: $font-ext-resource-path;
+@import '../../../../../ext/packages/font-ext/sass/src/all';
+
+/* including package theme-triton */
+$theme-triton-resource-root: '' !default;
+$theme-triton-resource-path: 'images' !default;
+$current-package: 'theme-triton';
+$current-resource-root: $theme-triton-resource-root;
+$relative-image-path-for-uis: $theme-triton-resource-path;
+@import '../../../../../ext/modern/theme-triton/sass/src/grid/HeaderContainer';
+@import '../../../../../ext/modern/theme-triton/sass/src/grid/Grid';
