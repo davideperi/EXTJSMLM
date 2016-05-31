@@ -11,9 +11,21 @@ Ext.define('MultiLanguageNative.Application', {
     stores: [
         // TODO: add global / shared stores here
     ],
-    
+
+	init: function(){
+		var locale = location.href.match(/locale=([\w-]+)/);
+		if( locale === null){
+			var locale = location.href.match(/lang=([\w-]+)/);
+		}
+		locale = (locale && locale[1]) || 'en';
+
+		Ext.apply('MultiLanguageNative',{
+		  locale: locale
+		});
+	},
     launch: function () {
         // TODO - Launch the application
+		console.log('Locale: ' + MultiLanguageNative.locale);
     },
 
     onAppUpdate: function () {
