@@ -549,6 +549,7 @@ $include-multilanguagenative-view-main-list: dynamic(true);;
 $include-multilanguagenative-view-main-main: dynamic(true);;
 $include-multilanguagenative-view-main-maincontroller: dynamic(true);;
 $include-multilanguagenative-view-main-mainmodel: dynamic(true);;
+$include-nativelocale-locale: dynamic(true);;
 $output-paths: ("path": "../resources");
 
 /* ======================== ETC ======================== */

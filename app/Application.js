@@ -12,20 +12,26 @@ Ext.define('MultiLanguageNative.Application', {
         // TODO: add global / shared stores here
     ],
 
-	init: function(){
-		var locale = location.href.match(/locale=([\w-]+)/);
-		if( locale === null){
-			var locale = location.href.match(/lang=([\w-]+)/);
-		}
-		locale = (locale && locale[1]) || 'en';
+	requires: ['NativeLocale.Locale'],
 
-		Ext.apply('MultiLanguageNative',{
-		  locale: locale
-		});
-	},
+    init: function(){
+
+        Ext.apply(NativeLocale,{
+            Locale:Ext.widget('nativelocale')
+        });
+
+        var locale = location.href.match(/locale=([\w-]+)/);
+        if( locale === null){
+            var locale = location.href.match(/lang=([\w-]+)/);
+        }
+        locale = (locale && locale[1]) || 'en';
+
+        NativeLocale.Locale.setLocale(locale);
+        
+    },
     launch: function () {
         // TODO - Launch the application
-		console.log('Locale: ' + MultiLanguageNative.locale);
+		console.log('Locale: ' + NativeLocale.Locale.getLocale());
     },
 
     onAppUpdate: function () {

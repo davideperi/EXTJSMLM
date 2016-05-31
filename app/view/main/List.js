@@ -15,13 +15,6 @@ Ext.define('MultiLanguageNative.view.main.List', {
         type: 'personnel'
     },
 
-	initComponent:function(){
-		console.log('Init component Locale: ' + MultiLanguageNative.locale);
-
-		this.callParent();
-		
-	},
-
     columns: [
         { text: 'Name',  dataIndex: 'name', width: 100 },
         { text: 'Email', dataIndex: 'email', width: 230 },
@@ -29,6 +22,7 @@ Ext.define('MultiLanguageNative.view.main.List', {
     ],
 
     listeners: {
-        select: 'onItemSelected'
+        select: 'onItemSelected',
+        painted: 'onListPainted'
     }
 });

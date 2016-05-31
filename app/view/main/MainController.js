@@ -17,5 +17,41 @@ Ext.define('MultiLanguageNative.view.main.MainController', {
         if (choice === 'yes') {
             //
         }
+    },
+
+    onListPainted: function(element){
+        var grid = element.component;
+
+        var title, column_name, column_email, column_phone,currentColumns = grid.getColumns();
+
+        var lang = NativeLocale.Locale.getLocale();
+        var columnArr = new Array();
+
+        if(lang == 'it'){
+            title= 'Lavoratori';
+            columnArr['column_name'] = 'Nome'
+            columnArr['column_email'] = 'Email';
+            columnArr['column_phone'] = "Telefono";
+        }
+        else if(lang == 'en'){
+            title= 'Workers'
+            columnArr['column_name'] = 'Name'
+            columnArr['column_email'] = 'Email';
+            columnArr['column_phone'] = "Phone";
+        }
+        else{
+            columnArr['column_name'] = 'Nombre'
+            columnArr['column_email'] = 'Correo';
+            columnArr['column_phone'] = "Telefono";
+        }
+
+        currentColumns.forEach(
+            function(column, index, array) {
+
+                var colParam = 'column_'+column._dataIndex;
+                var newText = columnArr[colParam];
+                column.setText(newText)
+            }
+        )
     }
 });
