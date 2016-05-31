@@ -544,6 +544,7 @@ $include-ext-viewport-viewport: dynamic(true);;
 $include-ext-viewport-wp: dynamic(true);;
 $include-ext-viewport-windowsphone: dynamic(true);;
 $include-multilanguagenative-application: dynamic(true);;
+$include-multilanguagenative-controller-translations: dynamic(true);;
 $include-multilanguagenative-store-personnel: dynamic(true);;
 $include-multilanguagenative-view-main-list: dynamic(true);;
 $include-multilanguagenative-view-main-main: dynamic(true);;

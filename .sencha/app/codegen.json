@@ -23,6 +23,9 @@
     },
     "config.rb.tpl.merge": {
       "33f446bd02c3fd24eb27891582eff6a2e789796b": "eJxLLi2KT8ksUrBVcMvMSdUDMvMSc1M14uPdPH1c4+M1ufJLSwpKS+KLSypzUoGqrPJSi0tSU7gALskTcA\u003d\u003d"
+    },
+    "{controllerFileName}.js.tpl.merge": {
+      "b092f4aad11d2f7eaab5ce3e2dcc2fc3134f3188": "eJxzrSjRS0lNy8xL1VCvTs7PKynKz8lJLfJLzE0tLkhMTq3VQxOtVddRqOZSAILUipLUvBQrBXVXoBmJBQV6znCF6ly1mtZcACwSIF0\u003d"
     }
   },
   "targets": {
@@ -256,6 +259,17 @@
         "viewFileName": "Main",
         "viewName": "Main",
         "viewNamespace": "MultiLanguageNative.view"
+      }
+    },
+    "app/controller/Translations.js": {
+      "source": "{controllerFileName}.js.tpl.merge",
+      "version": "b092f4aad11d2f7eaab5ce3e2dcc2fc3134f3188",
+      "parameters": {
+        "appName": "MultiLanguageNative",
+        "controllerFileName": "Translations",
+        "controllerName": "Translations",
+        "controllerNamespace": "MultiLanguageNative.controller",
+        "name": "Translations"
       }
     }
   }

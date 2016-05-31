@@ -11,6 +11,9 @@ Ext.define('MultiLanguageNative.Application', {
     stores: [
         // TODO: add global / shared stores here
     ],
+	controllers:[
+		'Translations'
+	],
 
 	requires: ['NativeLocale.Locale'],
 
@@ -32,6 +35,10 @@ Ext.define('MultiLanguageNative.Application', {
     launch: function () {
         // TODO - Launch the application
 		console.log('Locale: ' + NativeLocale.Locale.getLocale());
+		
+		/* Test controller */
+		// this.getApplication().getController('Translations').getString('en','column_name');
+		
     },
 
     onAppUpdate: function () {
