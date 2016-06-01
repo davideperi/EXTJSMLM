@@ -31,6 +31,7 @@ Ext.define('MultiLanguageNative.view.main.Main', {
 
     items: [
         {
+			id:'homePanel',
             title: 'Home',
             iconCls: 'x-fa fa-home',
             layout: 'fit',

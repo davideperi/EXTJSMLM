@@ -59,6 +59,9 @@ Ext.define('MultiLanguageNative.view.main.MainController', {
         )
 		*/
 		
+		/* Tab panel title */
+		Ext.getCmp('homePanel').tab.setTitle(MultiLanguageNative.app.getController('Translations').getString(lang,'tab_title'));
+		
 		
 		/*  Grid title */
 		
@@ -68,7 +71,7 @@ Ext.define('MultiLanguageNative.view.main.MainController', {
 
 		currentColumns.forEach(
             function(column, index, array) {
-                var colParam = 'column_'+column._dataIndex;
+                var colParam = 'column_'+ column._dataIndex;
                 //var newText = columnArr[colParam];
 				
 				console.log('lang: ' + lang);
