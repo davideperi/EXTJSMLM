@@ -34,9 +34,34 @@ Ext.define('MultiLanguageNative.view.main.Main', {
 			id:'homePanel',
             title: 'Home',
             iconCls: 'x-fa fa-home',
-            layout: 'fit',
+            layout: 'vbox',
             // The following grid shares a store with the classic version's grid as well!
             items: [{
+				xtype: 'selectfield',
+				label: 'Select language',
+				id:'selectLanguageField',
+				options: [{
+					text: '',  value: 'null'
+				},{
+					text: 'Italiano',  value: 'it'
+				},{
+					text: 'English', value: 'en'
+				},{
+					text: 'Español',  value: 'es'
+				}],
+				listeners:{
+                    change:function( thisObj, newV, oldV, eOpts){
+                        var newValue = newV.getData().value;
+						if(newValue!='null'){
+							var search = location.search,
+							index = search.indexOf('&'),
+							params = Ext.urlEncode({'lang': newValue });
+							location.search = (index === -1) ? params : params + search.substr(index);
+						}
+                    }
+                }
+			},{
+				flex:1,
                 xtype: 'mainlist'
             }]
         }

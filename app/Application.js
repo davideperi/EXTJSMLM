@@ -37,7 +37,12 @@ Ext.define('MultiLanguageNative.Application', {
 		console.log('Locale: ' + NativeLocale.Locale.getLocale());
 		
 		/* Test controller */
-		// this.getApplication().getController('Translations').getString('en','column_name');
+		// this.getApplication().getController('Translations').getString('en','select_lang');
+		
+		
+		
+		
+		
 		
     },
 

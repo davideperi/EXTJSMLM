@@ -59,16 +59,18 @@ Ext.define('MultiLanguageNative.view.main.MainController', {
         )
 		*/
 		
+		/* Selectfield label*/
+		Ext.getCmp('selectLanguageField').setLabel(MultiLanguageNative.app.getController('Translations').getString(lang,'select_lang'));
+
+		
 		/* Tab panel title */
 		Ext.getCmp('homePanel').tab.setTitle(MultiLanguageNative.app.getController('Translations').getString(lang,'tab_title'));
 		
 		
 		/*  Grid title */
-		
 		grid.setTitle(MultiLanguageNative.app.getController('Translations').getString(lang,'list_title'));
 
 		/*  Grid column name */
-
 		currentColumns.forEach(
             function(column, index, array) {
                 var colParam = 'column_'+ column._dataIndex;
